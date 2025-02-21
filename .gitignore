@@ -1,0 +1,10 @@
+# Dossiers et fichiers Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+*.db
+
+# Dossiers binaires et compilés
+bin/
+obj/
