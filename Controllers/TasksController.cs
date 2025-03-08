@@ -154,4 +154,9 @@ public class TasksController : Controller
     {
         return await _context.TodoTasks.AnyAsync(e => e.Id == id);
     }
+    public IActionResult Calendar()
+    {
+        var tasks = _context.TodoTasks.ToList(); // Utilisez TodoTasks (au pluriel) au lieu de TodoTask
+        return View(tasks);
+    }
 }
